@@ -1,7 +1,7 @@
-package net.leventeand1.armor;
+package net.leventeand1.util.enums;
 
 import net.leventeand1.TestMod;
-import net.leventeand1.util.RegistryHandler;
+import net.leventeand1.init.ModItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements IArmorMaterial {
 
     RUBY(TestMod.MOD_ID + ":ruby", 25, new int[] { 3, 6, 5, 3 }, 25,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); }, 30);
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> { return Ingredient.fromItems(ModItems.RUBY.get()); }, 30);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13 };
     private final String name;

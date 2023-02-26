@@ -1,7 +1,8 @@
 package net.leventeand1.events;
 
 import net.leventeand1.TestMod;
-import net.leventeand1.util.RegistryHandler;
+import net.leventeand1.init.ModBlocks;
+import net.leventeand1.init.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,13 +27,13 @@ public class ModClientEvents {
         if (player.getHeldItemMainhand().getItem() == Items.STICK) {
           TestMod.LOGGER.info("Player jumped with stick!");
             World world = player.getEntityWorld();
-            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), RegistryHandler.RUBY_BLOCK.get().getDefaultState());
+            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), ModBlocks.RUBY_BLOCK.get().getDefaultState());
         }
     }
 
     @SubscribeEvent
     public static void onDamageSheep(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == RegistryHandler.SUSPICIOUS_APPLE.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.SUSPICIOUS_APPLE.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof SheepEntity) {

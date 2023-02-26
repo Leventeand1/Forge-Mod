@@ -1,7 +1,7 @@
 package net.leventeand1.world.gen;
 
 import net.leventeand1.TestMod;
-import net.leventeand1.util.RegistryHandler;
+import net.leventeand1.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
@@ -28,17 +28,17 @@ public class ModOreGen {
             // Nether Generation
             if (biome.getCategory() == Biome.Category.NETHER) {
                 genOre(biome, 12, 5, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK,
-                        RegistryHandler.RUBY_ORE.get().getDefaultState(), 15);
+                        ModBlocks.RUBY_ORE.get().getDefaultState(), 15);
                 // End Generation
             } else if (biome.getCategory() == Biome.Category.THEEND) {
                 genOre(biome, 30, 3, 5, 80, END_STONE,
-                        RegistryHandler.RUBY_ORE.get().getDefaultState(), 30);
+                        ModBlocks.RUBY_ORE.get().getDefaultState(), 30);
 
 
                 // Overworld Generation
             } else {
                 genOre(biome, 20, 16, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                        RegistryHandler.RUBY_ORE.get().getDefaultState(), 10);
+                        ModBlocks.RUBY_ORE.get().getDefaultState(), 10);
             }
         }
     }
