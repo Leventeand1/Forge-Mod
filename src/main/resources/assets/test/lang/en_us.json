@@ -9,5 +9,7 @@
   "item.test.ruby_leggings": "Ruby Leggings",
   "item.test.ruby_boots": "Ruby Boots",
   "item.test.sus_apple": "Suspicious Apple",
-  "item.test.raw_ruby": "Raw Ruby"
+  "item.test.raw_ruby": "Raw Ruby",
+
+  "entity.test.hog" : "Hog"
 }
