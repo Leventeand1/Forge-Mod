@@ -1,0 +1,45 @@
+modLoader="javafml"
+
+loaderVersion="[31,)"
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="test"
+
+version="1.16.1-1.0.0"
+
+displayName="Testing Mod"
+
+updateJSONURL="http://myurl.me/"
+
+displayURL="http://example.com/"
+
+logoFile="examplemod.png"
+
+credits="Thanks for this example mod goes to Java"
+
+authors="Leventeand1"
+
+description='''
+This is a testing mod for Leventeand1
+'''
+[[dependencies.test]]
+
+    modId="forge"
+
+    mandatory=true
+
+    versionRange="[31,)"
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.test]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"

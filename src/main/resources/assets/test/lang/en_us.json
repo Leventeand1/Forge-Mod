@@ -1,0 +1,13 @@
+{
+  "item.test.ruby": "Ruby",
+  "itemGroup.testTab": "Testing Tab",
+  "block.test.ruby_block": "Block of Ruby",
+  "block.test.oven": "Oven",
+
+  "item.test.ruby_helmet": "Ruby Helmet",
+  "item.test.ruby_chestplate": "Ruby Chestplate",
+  "item.test.ruby_leggings": "Ruby Leggings",
+  "item.test.ruby_boots": "Ruby Boots",
+  "item.test.sus_apple": "Suspicious Apple",
+  "item.test.raw_ruby": "Raw Ruby"
+}
