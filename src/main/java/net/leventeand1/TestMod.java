@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 @Mod("test")
 public class TestMod
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "test";
 
     public TestMod() {

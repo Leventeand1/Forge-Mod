@@ -10,11 +10,11 @@
   {
     "d":
     {
-      "item": "minecraft:diamond"
+      "tag": "forge:gems/diamond"
     },
     "r":
     {
-      "tag": "test:gems "
+      "tag": "test:ruby"
     }
   },
   "result":
